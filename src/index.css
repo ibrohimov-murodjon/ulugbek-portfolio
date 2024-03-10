@@ -18,4 +18,8 @@
   main {
     @apply grow;
   }
+
+  .base-container {
+    @apply mx-auto w-full max-w-4xl px-5;
+  }
 }

@@ -58,7 +58,7 @@ export function NavbarSimple() {
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-4xl px-6 py-3">
+    <Navbar className="mx-auto max-w-[856px] px-5 py-3">
       <div className="flex items-center justify-between text-blue-gray-900">
         <NavLink className="mr-4 cursor-pointer py-1.5 font-bold" to="/">
           mirzobox.uz
