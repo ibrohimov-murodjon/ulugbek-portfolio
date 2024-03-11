@@ -16,6 +16,8 @@ const projects = [
       "/assets/gallery/tic-tac-toe/3.png",
       "/assets/gallery/tic-tac-toe/4.png",
     ],
+    commitsLink:
+      "https://github.com/mirzobox/tic-tac-toe-selfmade/commits/main",
   },
   {
     slug: "memory-game",
@@ -34,6 +36,8 @@ const projects = [
       "/assets/gallery/memory-game/3.png",
       "/assets/gallery/memory-game/4.png",
     ],
+    commitsLink:
+      "https://github.com/mirzoulugbek9008/memory-game-selfmade/commits/main",
   },
   {
     slug: "audiophile",
@@ -52,6 +56,7 @@ const projects = [
       "/assets/gallery/audiophile/3.png",
       "/assets/gallery/audiophile/4.png",
     ],
+    commitsLink: "https://github.com/mirzobox/audiophile-selfmade/commits/main",
   },
   {
     slug: "rock-paper-scissors",
@@ -70,6 +75,8 @@ const projects = [
       "/assets/gallery/rock-paper-scissors/3.png",
       "/assets/gallery/rock-paper-scissors/4.png",
     ],
+    commitsLink:
+      "https://github.com/mirzobox/rock-paper-scissors-selfmade/commits/main",
   },
   {
     slug: "mir-posuda",
@@ -94,6 +101,8 @@ const projects = [
       "/assets/gallery/rock-paper-scissors/3.png",
       "/assets/gallery/rock-paper-scissors/4.png",
     ],
+    commitsLink:
+      "https://github.com/MIRPOSUDA/mir-posuda-frontend/commits/main",
   },
 ];
 

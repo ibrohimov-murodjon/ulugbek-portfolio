@@ -1,16 +1,29 @@
 import CarouselCustomNavigation from "../components/CarouselCustomNavigation";
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink, ScrollRestoration, useParams } from "react-router-dom";
 import getProjectDetails from "../utils/get-project-datails";
 import { Typography } from "@material-tailwind/react";
 import getTime from "../utils/get-time";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
+import Anchor from "../components/Anchor";
+import getAnchors from "../utils/get-anchors";
 
 export default function ProjectDetails() {
   const { slug } = useParams();
-  const { gallery, title, description, createdDate, tehnologies } =
-    getProjectDetails(slug);
+  const {
+    gallery,
+    title,
+    description,
+    createdDate,
+    tehnologies,
+    commits,
+    commitsLink,
+  } = getProjectDetails(slug);
+
+  const [project_1, project_2] = getAnchors(slug);
+
   return (
-    <div className="base-container pt-32">
+    <div className="base-container py-32">
+      <ScrollRestoration />
       <NavLink
         className="mb-5 inline-block transition-colors hover:text-blue-500"
         to="/"
@@ -46,6 +59,29 @@ export default function ProjectDetails() {
             );
           })}
         </ul>
+      </div>
+
+      <div className="mb-10">
+        <Typography className="mb-5 text-2xl font-bold" as={"h2"}>
+          Kommitlar
+        </Typography>
+        <Typography>
+          <span className="font-bold">+{commits}</span> |{" "}
+          <a
+            className="text-blue-500 underline hover:no-underline"
+            href={commitsLink}
+            target="_blank"
+          >
+            Havola
+          </a>
+        </Typography>
+      </div>
+
+      <div>
+        <Typography className="mb-5 text-2xl font-bold" as={"h2"}>
+          Boshqa loyihalar
+        </Typography>
+        <Anchor project_1={project_1} project_2={project_2} />
       </div>
     </div>
   );
