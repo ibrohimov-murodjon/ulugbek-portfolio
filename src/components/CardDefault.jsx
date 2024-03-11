@@ -21,10 +21,14 @@ export default function CardDefault({
         <img className="h-full w-full object-cover" src={img} alt={title} />
       </CardHeader>
       <CardBody>
-        <Typography variant="h5" color="blue-gray" className="mb-2">
+        <Typography
+          className="mb-2 !line-clamp-1"
+          variant="h5"
+          color="blue-gray"
+        >
           {title}
         </Typography>
-        <Typography className="line-clamp-3">{description}</Typography>
+        <Typography className="!line-clamp-3">{description}</Typography>
       </CardBody>
       <CardFooter className="flex gap-5 pt-0">
         <a className="btn" href={github} target="_blank">
