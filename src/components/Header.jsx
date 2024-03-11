@@ -1,8 +1,8 @@
-import { NavbarSimple } from "./NavbarSimple";
+import NavbarSimple from "./NavbarSimple";
 
 export default function Header() {
   return (
-    <header className="py-5">
+    <header className="fixed z-50 w-full py-5">
       <NavbarSimple />
     </header>
   );

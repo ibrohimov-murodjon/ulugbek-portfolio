@@ -43,7 +43,7 @@ function NavList() {
   );
 }
 
-export function NavbarSimple() {
+export default function NavbarSimple() {
   const [openNav, setOpenNav] = useState(false);
 
   const handleWindowResize = () =>

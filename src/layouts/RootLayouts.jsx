@@ -1,5 +1,5 @@
-import Footer from "../components/Footer";
 import Header from "../components/Header";
+import { SimpleFooter } from "../components/SimpleFooter";
 import MainContent from "./MainContent";
 
 export default function RootLayouts() {
@@ -7,7 +7,7 @@ export default function RootLayouts() {
     <>
       <Header />
       <MainContent />
-      <Footer />
+      <SimpleFooter />
     </>
   );
 }

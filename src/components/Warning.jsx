@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Warning() {
   return (
-    <div className="base-container flex flex-col items-start py-5">
+    <div className="base-container flex flex-col items-start pb-5 pt-28">
       <Typography className="mb-3 text-3xl font-bold" as={"h2"}>
         Loyihalar
       </Typography>
