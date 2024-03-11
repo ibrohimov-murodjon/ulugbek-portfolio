@@ -9,7 +9,7 @@ export default function Blog() {
       <Typography className="mb-5 text-3xl font-bold" as={"h1"}>
         Muallifligimdagi maqolalar
       </Typography>
-      <ul className="grid grid-cols-1 gap-10">
+      <ul className="grid grid-cols-1 gap-6">
         {livePosts.map(({ title, description, link }) => {
           return (
             <li key={title}>
