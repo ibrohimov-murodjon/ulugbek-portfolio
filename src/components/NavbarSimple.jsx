@@ -15,6 +15,10 @@ function NavList() {
       title: "mirzobox kim ?",
     },
     {
+      path: "/",
+      title: "Loyihalar",
+    },
+    {
       path: "/blog",
       title: "Maqolalar",
     },
