@@ -39,7 +39,7 @@ export default function ProjectDetails() {
           <Typography className="text-3xl font-bold" as={"h1"}>
             {title}
           </Typography>
-          <time class="project-info__time" datetime={createdDate}>
+          <time className="project-info__time" dateTime={createdDate}>
             ⌚ {getTime(createdDate)}
           </time>
         </div>

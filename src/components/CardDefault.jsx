@@ -17,7 +17,10 @@ export default function CardDefault({
 }) {
   return (
     <Card className="mt-6 w-full">
-      <CardHeader color="blue-gray" className="relative h-52">
+      <CardHeader
+        color="blue-gray"
+        className="relative h-52 md:h-72 lg:h-80 xl:h-96"
+      >
         <img
           className="h-full w-full object-cover object-center"
           src={img}
@@ -34,7 +37,7 @@ export default function CardDefault({
         </Typography>
         <Typography className="!line-clamp-4">{description}</Typography>
       </CardBody>
-      <CardFooter className="flex flex-col gap-3 pt-0">
+      <CardFooter className="flex flex-col gap-3 pt-0 md:flex-row">
         <div className="flex justify-between gap-3">
           <a className="btn w-2/4" href={github} target="_blank">
             GitHub
