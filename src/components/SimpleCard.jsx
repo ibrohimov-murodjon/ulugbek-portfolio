@@ -19,7 +19,11 @@ export default function SimpleCard({ link, title, description }) {
         <Typography className="!line-clamp-3">{description}</Typography>
       </CardBody>
       <CardFooter className="flex pt-0">
-        <a className="btn ml-auto" href={link} target="_blank">
+        <a
+          className="btn w-full whitespace-nowrap sm:ml-auto sm:w-min"
+          href={link}
+          target="_blank"
+        >
           Ba' tafsil
         </a>
       </CardFooter>
