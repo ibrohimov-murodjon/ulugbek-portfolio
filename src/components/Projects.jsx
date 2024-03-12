@@ -1,4 +1,5 @@
 import projects from "../projects";
+import getSortedProjectsByTime from "../utils/get-sorted-projects-by-time";
 import CardDefault from "./CardDefault";
 
 export default function Projects() {
@@ -6,7 +7,7 @@ export default function Projects() {
   return (
     <div className="base-container pb-20">
       <ul className="grid grid-cols-1 gap-10">
-        {liveProjects.map(
+        {getSortedProjectsByTime(liveProjects).map(
           ({ title, description, github, img, website, slug }) => {
             return (
               <li key={title}>

@@ -17,8 +17,12 @@ export default function CardDefault({
 }) {
   return (
     <Card className="mt-6 w-full">
-      <CardHeader color="blue-gray" className="relative h-96">
-        <img className="h-full w-full object-cover" src={img} alt={title} />
+      <CardHeader color="blue-gray" className="relative h-52">
+        <img
+          className="h-full w-full object-cover object-center"
+          src={img}
+          alt={title}
+        />
       </CardHeader>
       <CardBody>
         <Typography
@@ -28,16 +32,21 @@ export default function CardDefault({
         >
           {title}
         </Typography>
-        <Typography className="!line-clamp-3">{description}</Typography>
+        <Typography className="!line-clamp-4">{description}</Typography>
       </CardBody>
-      <CardFooter className="flex gap-5 pt-0">
-        <a className="btn" href={github} target="_blank">
-          GitHub
-        </a>
-        <a className="btn" href={website} target="_blank">
-          Site
-        </a>
-        <NavLink className="btn flex items-center gap-2" to={`/${slug}`}>
+      <CardFooter className="flex flex-col gap-3 pt-0">
+        <div className="flex justify-between gap-3">
+          <a className="btn w-2/4" href={github} target="_blank">
+            GitHub
+          </a>
+          <a className="btn w-2/4" href={website} target="_blank">
+            Site
+          </a>
+        </div>
+        <NavLink
+          className="btn flex items-center justify-center gap-2"
+          to={`/${slug}`}
+        >
           Ba' tafsil
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -5,7 +5,7 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     window.onscroll = function () {
-      if (scrollY > 750) setScrollUp(true);
+      if (scrollY > 10) setScrollUp(true);
       else setScrollUp(false);
     };
   }, []);
