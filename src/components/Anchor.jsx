@@ -9,8 +9,8 @@ export default function Anchor({ project_1, project_2 }) {
         to={`/${project_1.slug}`}
       >
         <span className="flex flex-row-reverse items-center justify-center gap-5">
-          <span>{project_1.title}</span>
-          <ArrowLeftIcon className="h-6 w-6 text-black" />
+          <span className="!line-clamp-1">{project_1.title}</span>
+          <ArrowLeftIcon className="h-6 w-6 flex-shrink-0 text-black" />
         </span>
       </NavLink>
       <NavLink
@@ -18,8 +18,8 @@ export default function Anchor({ project_1, project_2 }) {
         to={`/${project_2.slug}`}
       >
         <span className="flex items-center justify-center gap-5">
-          <span>{project_2.title}</span>
-          <ArrowRightIcon className="h-6 w-6 text-black" />
+          <span className="!line-clamp-1">{project_2.title}</span>
+          <ArrowRightIcon className="h-6 w-6 flex-shrink-0 text-black" />
         </span>
       </NavLink>
     </div>

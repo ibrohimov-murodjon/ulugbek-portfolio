@@ -25,7 +25,7 @@ export default function ProjectDetails() {
     <div className="base-container py-32">
       <ScrollRestoration />
       <NavLink
-        className="mb-5 inline-block transition-colors hover:text-blue-500"
+        className="mb-10 inline-block transition-colors hover:text-blue-500"
         to="/"
       >
         <span className="flex items-center gap-2">
@@ -35,7 +35,7 @@ export default function ProjectDetails() {
       </NavLink>
       <CarouselCustomNavigation gallery={gallery} />
       <div className="mb-10">
-        <div className="mb-5 flex items-center justify-between">
+        <div className="mb-5 flex flex-col items-start justify-between gap-5 md:flex-row md:items-center">
           <Typography className="text-3xl font-bold" as={"h1"}>
             {title}
           </Typography>
