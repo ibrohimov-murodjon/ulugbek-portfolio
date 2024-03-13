@@ -50,8 +50,9 @@ function NavList() {
 export default function NavbarSimple() {
   const [openNav, setOpenNav] = useState(false);
 
-  const handleWindowResize = () =>
+  const handleWindowResize = () => {
     window.innerWidth >= 960 && setOpenNav(false);
+  };
 
   useEffect(() => {
     window.addEventListener("resize", handleWindowResize);
