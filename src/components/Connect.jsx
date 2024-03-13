@@ -15,10 +15,14 @@ export default function Connect() {
     },
     {
       title: "GitHub",
-      link: "https://www.linkedin.com/in/mirzobox",
+      link: "https://github.com/mirzobox",
       icon: GitHub,
     },
-    { title: "LinkedIn", link: "https://github.com/mirzobox", icon: LinkedIn },
+    {
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/mirzobox",
+      icon: LinkedIn,
+    },
     { title: "Telegram", link: "https://t.me/mirzobox", icon: Telegram },
     { title: "Blog", link: "https://t.me/insightforeveryone", icon: Blog },
   ];
