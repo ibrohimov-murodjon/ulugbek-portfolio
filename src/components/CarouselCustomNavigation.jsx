@@ -24,7 +24,7 @@ export default function CarouselCustomNavigation({ gallery }) {
       {gallery?.map((image, index) => {
         return (
           <img
-            className="h-full w-full object-cover object-center"
+            className="h-full w-full object-cover object-top"
             src={image}
             alt={`Image ${index + 1}`}
             key={index}

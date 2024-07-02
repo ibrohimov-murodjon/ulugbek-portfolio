@@ -4,7 +4,7 @@ import getProjectDetails from "../utils/get-project-datails";
 import { Typography } from "@material-tailwind/react";
 import getTime from "../utils/get-time";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-import Anchor from "../components/Anchor";
+// import Anchor from "../components/Anchor";
 import getAnchors from "../utils/get-anchors";
 
 export default function ProjectDetails() {
@@ -81,7 +81,7 @@ export default function ProjectDetails() {
         <Typography className="mb-5 text-2xl font-bold" as={"h2"}>
           Boshqa loyihalar
         </Typography>
-        <Anchor project_1={project_1} project_2={project_2} />
+        {/* <Anchor project_1={project_1} project_2={project_2} /> */}
       </div>
     </div>
   );
