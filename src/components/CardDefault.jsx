@@ -22,7 +22,7 @@ export default function CardDefault({
         className="relative h-52 md:h-72 lg:h-80 xl:h-96"
       >
         <img
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover object-top"
           src={img}
           alt={title}
         />
@@ -48,7 +48,7 @@ export default function CardDefault({
         </div>
         <NavLink
           className="btn flex items-center justify-center gap-2"
-          to={`/${slug}`}
+          to={`/projects/${slug}`}
         >
           Ba' tafsil
           <svg

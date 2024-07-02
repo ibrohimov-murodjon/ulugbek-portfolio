@@ -5,7 +5,7 @@ import { Typography } from "@material-tailwind/react";
 import getTime from "../utils/get-time";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 // import Anchor from "../components/Anchor";
-import getAnchors from "../utils/get-anchors";
+// import getAnchors from "../utils/get-anchors";
 
 export default function ProjectDetails() {
   const { slug } = useParams();
@@ -19,7 +19,7 @@ export default function ProjectDetails() {
     commitsLink,
   } = getProjectDetails(slug);
 
-  const [project_1, project_2] = getAnchors(slug);
+  // const [project_1, project_2] = getAnchors(slug);
 
   return (
     <div className="base-container py-32">
@@ -77,12 +77,12 @@ export default function ProjectDetails() {
         </Typography>
       </div>
 
-      <div>
+      {/* <div>
         <Typography className="mb-5 text-2xl font-bold" as={"h2"}>
           Boshqa loyihalar
         </Typography>
-        {/* <Anchor project_1={project_1} project_2={project_2} /> */}
-      </div>
+        <Anchor project_1={project_1} project_2={project_2} />
+      </div> */}
     </div>
   );
 }

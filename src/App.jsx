@@ -25,7 +25,7 @@ export default function App() {
           element: <Blog />,
         },
         {
-          path: "/:slug",
+          path: "/projects/:slug",
           element: <ProjectDetails />,
         },
       ],
